@@ -48,3 +48,10 @@ checkSigned(sizeof(double),"double");
 */
 return 0;
 }
+
+
+
+/*
+internal representation of  size_t defined in stddef.h
+typedef unsigned long size_t;
+*/
