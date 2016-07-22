@@ -1,10 +1,10 @@
-#include<stdio.h>\
+#include<stdio.h>
 
 void checkSigned(size_t bitValue,char *string)
 {
 int countBits = 8*bitValue;
-unsigned int fromRange = -( 1 << (countBits-1) );
-unsigned int toRange = ( 1 << (countBits-1) ) -1;\
+int fromRange = -( 1 << (countBits-1) );
+int toRange = ( 1 << (countBits-1) ) -1;\
 printf(" range of signed %s : is %d to %d\n",string,fromRange,toRange);
 }
 
@@ -17,7 +17,7 @@ printf(" range of unsigned %s : is %u to %u\n",string,0,Range);
 
 int main()
 {
-//without "sizeof"
+//without "sizeof()" function
 
 // for unsigned
 printf("Ranges for unsigned...\n");
@@ -33,7 +33,7 @@ checkSigned(1,"char");
 checkSigned(4,"float");
 checkSigned(4,"double");
 
-//with "sizeof"
+//with "sizeof" function
 
 /*checkUnSigned(sizeof(unsigned int),"int");
 checkUnSigned(sizeof(unsigned char),"char");
