@@ -4,7 +4,7 @@ void checkSigned(size_t bitValue,char *string)
 {
 int countBits = 8*bitValue;
 int fromRange = -( 1 << (countBits-1) );
-int toRange = ( 1 << (countBits-1) ) -1;\
+int toRange = ( 1 << (countBits-1) ) -1;
 printf(" range of signed %s : is %d to %d\n",string,fromRange,toRange);
 }
 
